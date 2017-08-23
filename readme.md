@@ -36,6 +36,12 @@
 
 ![](https://user-images.githubusercontent.com/12909077/27505548-db67b776-58d4-11e7-8775-ff038c8c11bf.png)
 
+### 黑名单过滤 + 广告 + IPv6
+
+增加 IPv6 Hosts 支持。
+
+规则地址：<https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/ipv6/sr_top500_banlist_ad_v6.conf>
+
 ## 白名单过滤 + 广告
 
 白名单中包含了境外网站中可以访问的那些，对不确定的网站则默认代理。
@@ -47,6 +53,12 @@
 规则地址：<https://raw.githubusercontent.com/h2y/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist_ad.conf>
 
 ![](https://user-images.githubusercontent.com/12909077/27505553-ef1b86c6-58d4-11e7-9fb1-eafbd0c5dc81.png)
+
+### 白名单过滤 + 广告 + IPv6
+
+增加 IPv6 Hosts 支持。
+
+规则地址：<https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/ipv6/sr_top500_whitelist_ad_v6.conf>
 
 
 ## 黑名单过滤
