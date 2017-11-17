@@ -32,9 +32,7 @@
 - 直连：默认直连境外其余网站、中国网站
 - 包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/h2y/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist_ad.conf>
-
-![](https://user-images.githubusercontent.com/12909077/27505548-db67b776-58d4-11e7-8775-ff038c8c11bf.png)
+规则地址：<https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist_ad.conf>
 
 ## 白名单过滤 + 广告
 
@@ -44,9 +42,8 @@
 - 代理：默认代理其余的所有境外网站
 - 包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/h2y/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist_ad.conf>
+规则地址：<https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist_ad.conf>
 
-![](https://user-images.githubusercontent.com/12909077/27505553-ef1b86c6-58d4-11e7-9fb1-eafbd0c5dc81.png)
 
 
 ## 黑名单过滤
@@ -57,9 +54,8 @@
 - 直连：默认直连境外其余网站、中国网站
 - 不包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/h2y/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist.conf>
+规则地址：<https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist.conf>
 
-![](https://user-images.githubusercontent.com/12909077/28882175-0b25a244-77dd-11e7-8939-e9024f74f723.png)
 
 
 ## 白名单过滤
@@ -70,9 +66,8 @@
 - 代理：默认代理其余的所有境外网站
 - 不包含广告过滤
 
-规则地址：<https://raw.githubusercontent.com/h2y/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist.conf>
+规则地址：<https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist.conf>
 
-![](https://user-images.githubusercontent.com/12909077/27505552-ef108226-58d4-11e7-82eb-8558289d3953.png)
 
 
 ## 常见问题
@@ -121,13 +116,13 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 
 ## 问题反馈
 
-任何问题欢迎在 [Issues](https://github.com/h2y/Shadowrocket-ADBlock-Rules/issues) 中反馈，如果没有账号可以去 [我的网站](https://hzy.pw/p/2096#comments) 中留言。
+任何问题欢迎在 [Issues](https://github.com/quentin-chen/Shadowrocket-ADBlock-Rules/issues) 中反馈，如果没有账号可以去 [我的网站](https://hzy.pw/p/2096#comments) 中留言。
 
 你的反馈会让此规则变得更加完美。
 
 **如何贡献代码？**
 
-通常的情况下，对 [factory 目录](https://github.com/h2y/Shadowrocket-ADBlock-Rules/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
+通常的情况下，对 [factory 目录](https://github.com/quentin-chen/Shadowrocket-ADBlock-Rules/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
 
 
 ## 捐助
