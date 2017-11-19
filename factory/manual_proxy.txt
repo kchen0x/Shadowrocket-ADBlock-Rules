@@ -41,3 +41,7 @@ whatsapp.net
 reederapp.com
 instapaper.com
 newsblur.com
+
+# Quora
+quora.com
+quoracdn.net
