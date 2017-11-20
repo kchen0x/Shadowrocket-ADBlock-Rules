@@ -45,3 +45,7 @@ newsblur.com
 # Quora
 quora.com
 quoracdn.net
+
+# Spark mail with Gmail
+64.233.189.108
+app.smartmailcloud.com
