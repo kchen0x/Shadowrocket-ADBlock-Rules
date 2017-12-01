@@ -49,3 +49,7 @@ quoracdn.net
 # Spark mail with Gmail
 64.233.189.108
 app.smartmailcloud.com
+
+# Podcast 相关
+blubrry.com
+podtrac.com
