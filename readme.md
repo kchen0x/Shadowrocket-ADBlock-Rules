@@ -112,7 +112,7 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 包含广告过滤
 
 规则地址：[sr_top500_banlist_ad.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist_ad.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/qrcode/sr_top500_banlist_ad.png)
+![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_banlist_ad.png)
 
 ## 白名单过滤 + 广告
 
@@ -123,7 +123,7 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 包含广告过滤
 
 规则地址：[sr_top500_whitelist_ad.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist_ad.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/qrcode/sr_top500_whitelist_ad.png)
+![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_whitelist_ad.png)
 
 ## 黑名单过滤
 
@@ -134,7 +134,7 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 不包含广告过滤
 
 规则地址：[sr_top500_banlist.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/qrcode/sr_top500_banlist.png)
+![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_banlist.png)
 
 ## 白名单过滤
 
@@ -145,7 +145,7 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 不包含广告过滤
 
 规则地址：[sr_top500_whitelist.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/qrcode/sr_top500_whitelist.png)
+![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_whitelist.png)
 
 ## 直连去广告
 
@@ -155,7 +155,7 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 包含广告过滤
 
 规则地址：[sr_direct_banad.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_direct_banad.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/qrcode/sr_direct_banad.png)
+![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_direct_banad.png)
 
 ## 代理去广告
 
@@ -166,4 +166,4 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 包含广告过滤
 
 规则地址：[sr_proxy_banad.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_proxy_banad.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/qrcode/sr_proxy_banad.png)
+![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_proxy_banad.png)
