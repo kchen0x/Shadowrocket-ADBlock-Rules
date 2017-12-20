@@ -59,6 +59,7 @@
 - 2017/12/01 添加对原生 Podcast 应用收听国外播客的代理：
     - blubrry.com
     - podtrac.com
+    - soundcloud.com
 - 2017/11/20 添加在 iOS 设备上使用 Spark 客户端访问 Gmail 等邮箱的代理。
 - 2017/11/19 添加对 Quora 客户端的代理。
 - 2017/11/17 添加在 iOS 设备上正常使用 Reeder 等阅读器阅读 RSS 文章的代理。

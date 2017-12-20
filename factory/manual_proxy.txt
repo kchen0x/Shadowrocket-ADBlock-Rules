@@ -56,6 +56,7 @@ app.smartmailcloud.com
 # Podcast 相关
 blubrry.com
 podtrac.com
+soundcloud.com
 
 # 新闻相关
 nyt.com
