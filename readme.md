@@ -54,6 +54,7 @@
 
 ## Change Log
 
+- 2018/01/26 Google Cloud Platform 的手机客户端 API。
 - 2017/12/02 纽约时报图片加载代理。
 - 2017/12/02 Merge from h2y 的「增加 2 个纯去广告规则」。
 - 2017/12/01 添加对原生 Podcast 应用收听国外播客的代理：

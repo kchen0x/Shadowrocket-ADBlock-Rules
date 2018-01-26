@@ -60,3 +60,6 @@ soundcloud.com
 
 # 新闻相关
 nyt.com
+
+# Google API
+appspot.com
