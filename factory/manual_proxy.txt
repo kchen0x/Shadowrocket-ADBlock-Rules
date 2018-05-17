@@ -63,3 +63,15 @@ nyt.com
 
 # Google API
 appspot.com
+ampproject.org
+
+# 经济相关
+binance.com
+idex.market
+
+# 论坛相关
+v2ex.com
+doub.io
+
+# 网站提速
+airtable.com

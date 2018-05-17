@@ -54,6 +54,7 @@
 
 ## Change Log
 
+- 2018/05/17 Google AMP Project 网站加速服务。
 - 2018/01/26 Google Cloud Platform 的手机客户端 API。
 - 2017/12/02 纽约时报图片加载代理。
 - 2017/12/02 Merge from h2y 的「增加 2 个纯去广告规则」。
