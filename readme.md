@@ -11,20 +11,27 @@
 - 专门针对 ShadowRocket 开发，可以保证与 SR 的兼容性。
 - 在原始维护者 h2y 的基础上对部分不在 top500 内的网站也做了手工添加。
 
-### 目录
-
 规则 | 去广告 | 规定代理的网站 | 规定直连的网站 | 剩余的网站 
 --- | ------ | -------------- | ------------- | ----------
 [黑名单过滤 + 广告](#黑名单过滤--广告) | 是 | top500 网站中不可直连的网站 | 中国网站 | 直连
 [白名单过滤 + 广告](#白名单过滤--广告) | 是 | 无 | top500 网站中可直连的网站、中国网站 | 代理
 [黑名单过滤](#黑名单过滤) | 无 | top500 网站中不可直连的网站 | 中国网站 | 直连
 [白名单过滤](#白名单过滤) | 无 | 无 | top500 网站中可直连的网站、中国网站 | 代理
-[直连去广告](#直连去广告) | 是 | 无 | 无 | 直连
-[代理去广告](#代理去广告) | 是 | 无 | 无 | 代理
+[国内外划分 + 广告](#国内外划分--广告) | 是 | 国外所有 | 中国网站 | /
+[国内外划分](#国内外划分) | 无 | 国外所有 | 中国网站 | /
+[直连去广告](#直连去广告) | 是 | 无 | 全部 | /
+[代理去广告](#代理去广告) | 是 | 全部 | 无 | /
+[回国规则](#回国规则) | 无 | 中国网站 | 国外网站 | /
+[回国规则 + 广告](#回国规则--广告) | 是 | 中国网站 | 国外网站 | /
 
+- 前两个规则是大多数人的选择。:+1: 
 - 以上所有规则，局域网内请求均直连。
-- 前两个规则是大多数人的选择。
 - 可以下载多个规则切换使用。
+
+**使用方法**
+
+在 ShadowRocket 应用中，进入 [配置] 页面，点击扫描二维码的按钮添加规则。再激活添加的规则文件即可。
+
 
 ## 常见问题
 
@@ -54,6 +61,7 @@
 
 ## Change Log
 
+- 2018/05/17 Merge from h2y 添加了**国内外划分**和**回国规则**的支持。
 - 2018/05/17 Google AMP Project 网站加速服务。
 - 2018/01/26 Google Cloud Platform 的手机客户端 API。
 - 2017/12/02 纽约时报图片加载代理。
@@ -70,7 +78,7 @@
 
 [**AppleDNS**](https://github.com/gongjianhui/AppleDNS)
 
-Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 DNS 最优解析结果，加快访问速度。
+Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 DNS 最优解析结果，可以轻微加快访问速度。
 
 电脑需安装 Python，按照 Readme 运行后，将生成的 hosts 粘贴到 `Shadowrocket->Settings->DNS->Hosts` 即可。
 
@@ -89,13 +97,13 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 
 ## 问题反馈
 
-任何问题欢迎在 [Issues](https://github.com/quentin-chen/Shadowrocket-ADBlock-Rules/issues) 中反馈，如果没有账号可以去 [我的网站](https://hzy.pw/p/2096#comments) 中留言。
+任何问题欢迎在 [Issues](https://github.com/kchen0x/Shadowrocket-ADBlock-Rules/issues) 中反馈。
 
 你的反馈会让此规则变得更加完美。
 
 **如何贡献代码？**
 
-通常的情况下，对 [factory 目录](https://github.com/quentin-chen/Shadowrocket-ADBlock-Rules/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
+通常的情况下，对 [factory 目录](https://github.com/kchen0x/Shadowrocket-ADBlock-Rules/tree/master/factory) 下的 3 个 `manual_*.txt` 文件做对应修改即可。
 
 
 ## 捐助
@@ -115,8 +123,8 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 直连：默认直连境外其余网站、中国网站
 - 包含广告过滤
 
-规则地址：[sr_top500_banlist_ad.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist_ad.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_banlist_ad.png)
+规则地址：[sr_top500_banlist_ad.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist_ad.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_banlist_ad.png)
 
 ## 白名单过滤 + 广告
 
@@ -126,8 +134,8 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 代理：默认代理其余的所有境外网站
 - 包含广告过滤
 
-规则地址：[sr_top500_whitelist_ad.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist_ad.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_whitelist_ad.png)
+规则地址：[sr_top500_whitelist_ad.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist_ad.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_whitelist_ad.png)
 
 ## 黑名单过滤
 
@@ -137,8 +145,8 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 直连：默认直连境外其余网站、中国网站
 - 不包含广告过滤
 
-规则地址：[sr_top500_banlist.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_banlist.png)
+规则地址：[sr_top500_banlist.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_top500_banlist.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_banlist.png)
 
 ## 白名单过滤
 
@@ -148,26 +156,65 @@ Hosts 生成工具，生成 `在当前所在网络环境下` Apple 服务器的 
 - 代理：默认代理其余的所有境外网站
 - 不包含广告过滤
 
-规则地址：[sr_top500_whitelist.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_whitelist.png)
+规则地址：[sr_top500_whitelist.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_top500_whitelist.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_top500_whitelist.png)
+
+## 国内外划分 + 广告
+
+国内外划分，对中国网站直连，外国网站代理。包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
+
+规则地址：[sr_cnip_ad.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_cnip_ad.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_cnip_ad.png)
+
+
+## 国内外划分
+
+国内外划分，对中国网站直连，外国网站代理。不包含广告过滤。国外网站总是走代理，对于某些港澳台网站，速度反而会比直连更快。
+
+规则地址：[sr_cnip.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_cnip.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_cnip.png)
+
 
 ## 直连去广告
 
-如果你想用 SR 作为 iOS 全局去广告工具，这个规则会对你有所帮助。
+如果你想将 SR 作为 iOS 全局去广告工具，这个规则会对你有所帮助。
 
 - 直连：所有请求
 - 包含广告过滤
 
-规则地址：[sr_direct_banad.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_direct_banad.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_direct_banad.png)
+规则地址：[sr_direct_banad.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_direct_banad.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_direct_banad.png)
 
 ## 代理去广告
 
-如果你想用 SR 作为 iOS 全局去广告 + 全局翻墙工具，这个规则会对你有所帮助。
+如果你想将 SR 作为 iOS 全局去广告 + 全局翻墙工具，这个规则会对你有所帮助。
 
 - 直连：局域网请求
 - 代理：其余所有请求
 - 包含广告过滤
 
-规则地址：[sr_proxy_banad.conf](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/sr_proxy_banad.conf)
-![](https://raw.githubusercontent.com/quentin-chen/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_proxy_banad.png)
+规则地址：[sr_proxy_banad.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_proxy_banad.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_proxy_banad.png)
+
+## 回国规则
+
+提供给海外华侨使用，可以回到墙内，享受国内的一些互联网服务。
+
+- 直连：国外网站
+- 代理：中国网站
+- 不包含广告过滤
+
+规则地址：[sr_backcn.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_backcn.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_backcn.png)
+
+
+## 回国规则 + 广告
+
+提供给海外华侨使用，可以回到墙内，享受国内的一些互联网服务。
+
+- 直连：国外网站
+- 代理：中国网站
+- 包含广告过滤
+
+规则地址：[sr_backcn_ad.conf](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/sr_backcn_ad.conf)
+![](https://raw.githubusercontent.com/kchen0x/Shadowrocket-ADBlock-Rules/master/factory/qrcode/sr_backcn_ad.png)

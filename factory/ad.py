@@ -1,5 +1,9 @@
 # -*- coding: utf-8 -*-
 
+#
+# 提取广告规则，并且只提取对全域禁止的那种规则
+#
+
 import time
 import sys
 import requests
@@ -40,34 +44,35 @@ for rule_url in rules_url:
 
     rule = r.text
 
-    # parse html
+    # parse rule
     rule = rule.split('\n')
     for row in rule:
-        if not row.startswith('||') and not row.startswith('|http'):
+        row = row.strip()
+
+        # 直接跳过
+        if row.startswith('!') or row.startswith('@@') or "$" in row:
             continue
 
-        # del prefix
-        row = re.sub(r'^\|(\||https?:\/\/)', '', row)
-        # del suffix
-        row = row.rstrip('/^ ')
+        # 清除前缀
+        row = re.sub(r'^\|?https?:\/\/', '', row)
+        row = re.sub(r'^\|\|', '', row)
+        row = row.lstrip('.*')
 
-        if re.search(r'[\$\^:\*]', row):
-            continue
-        if row.count('/'):
+        # 清除后缀
+        row = row.rstrip('/^*')
+
+        # 不能含有的字符
+        if re.search(r'[\/\^:\*]', row):
             continue
 
-        if not re.match(r'\w+(\.\w+)+$', row):
-            continue
-
-        # match
-        domains.append(row)
+        # 只匹配域名或 IP
+        if re.match(r'^([a-zA-Z0-9]([a-zA-Z0-9\-]{0,61}[a-zA-Z0-9])?\.)+[a-zA-Z]{2,9}$', row) or re.match(r'^\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}$', row):
+            domains.append(row)
 
     print('done.')
 
 
 # write into files
-
-domains.sort()
 
 file_ad = sys.stdout
 try:
@@ -80,9 +85,8 @@ except:
 
 file_ad.write('# adblock rules refresh time: ' + time.strftime("%Y-%m-%d %H:%M:%S") + '\n')
 
-last = ''
+domains = list( set(domains) )
+domains.sort()
+
 for item in domains:
-    if last == item:
-        continue
     file_ad.write(item + '\n')
-    last = item
